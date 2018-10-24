@@ -1,0 +1,124 @@
+//
+//  FanHeIOS2.pch
+//  FanHeIOS2.0
+//
+//  Created by 胡梦驰 on 16/6/21.
+//  Copyright © 2016年 胡梦驰. All rights reserved.
+//
+
+#ifndef FanHeIOS2_pch
+#define FanHeIOS2_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "ModelHeader.h"
+
+#import <JavaScriptCore/JSContext.h>
+
+//宏定义
+#import "EnumDefine.h"
+#import "GlobalDefine.h"
+#import "NotificationMacro.h"
+
+//第三方类库
+#import "ReactiveCocoa.h"
+#import "RESideMenu.h"
+#import "MJRefresh.h"
+#import "ZLPhoto.h"
+
+//友盟新浪，微信
+#import <UMSocialCore/UMSocialCore.h>
+#import <UMengUShare/WXApi.h>
+#import "UMSocialSinaHandler.h"
+#import "UMSocialWechatHandler.h"
+
+#import <JZLocationConverter/JZLocationConverter.h>
+
+//七牛
+#import "QiniuSDK.h"
+
+//仿微信图片视频选择器
+#import "TZImagePickerController.h"
+
+//分类category
+#import "NSMutableURLRequest+Category.h"
+#import "UIImage+SHDQ.h"
+#import "UIColor+SHDQ.h"
+#import "NSDate+SHDQ.h"
+#import "UIFont+SHDQ.h"
+#import "UILabel+SHDQ.h"
+#import "CALayer+Category.h"
+#import "NSString+Category.h"
+#import "NSFileManager+Category.h"
+#import "UINavigationController+Category.h"
+#import "NSData+Base64.h"
+#import "UIAlertView+Category.h"
+#import "UIAlertView+IABlocks.h"
+#import "UIView+Category.h"
+#import "UILocalNotification+Category.h"
+#import "UIImageView+Category.h"
+#import "UIViewController+Category.h"
+#import "UIAlertView+Category.h"
+#import "UIView+Toast.h"
+#import "UIButton+WebCache.h"
+#import "UITableView+Category.h"
+#import "UIViewController+API.h"
+#import "UIImageView+WebCache.h"
+
+//工具类third
+#import "NSHelper.h"
+#import "CommonUIAlert.h"
+#import "CommonMethod.h"
+#import "MBProgressHUD+Add.h"
+#import "MBProgressHUD.h"
+#import "MWPhotoBrowser.h"
+#import "MWPhoto.h"
+#import "Reachability.h"
+#import "QRCodeGenerator.h"
+#import "Reachability.h"
+#import "RKUserDefaults.h"
+
+//环信
+#import <HyphenateLite/HyphenateLite.h>
+#import "EaseUI.h"
+
+//高德
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <AMapLocationKit/AMapLocationKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+
+//全局数据
+#import "DataModelInstance.h"
+#import "DBInstance.h"
+
+#import "BaseViewController.h"
+
+#import "CompleteUserInfoView.h"
+#import "UploadImageTypeView.h"
+
+#import "NotWorkShow.h"
+
+#import "AppDelegate.h"
+#import <DTCoreText/DTCoreText.h>
+
+#import <AlipaySDK/AlipaySDK.h>
+
+#import "NewMyHomePageController.h"
+
+#import "AddFriendError.h"
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#endif
+
+#endif /* FanHeIOS2_pch */
+
+

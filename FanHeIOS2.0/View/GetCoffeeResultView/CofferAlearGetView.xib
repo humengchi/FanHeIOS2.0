@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CofferAlearGetView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSK-bB-bey">
+                    <rect key="frame" x="25" y="190" width="325" height="286"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pop_wszl" translatesAutoresizingMaskIntoConstraints="NO" id="kUZ-WY-H4n">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="286"/>
+                            <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.90000000000000002"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你已经领过Ta的咖啡了" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ik8-Bf-z8L">
+                            <rect key="frame" x="25" y="134" width="275" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="SWo-QL-yA8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRD-xb-ICg">
+                            <rect key="frame" x="38" y="192" width="249" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="opX-92-m9Q"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确定" backgroundImage="btn_rm_off_red"/>
+                            <connections>
+                                <action selector="cancelBatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Pqb-gM-lxZ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tx_cwsj" translatesAutoresizingMaskIntoConstraints="NO" id="IpH-Pc-yia">
+                            <rect key="frame" x="127" y="54" width="71" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="71" id="Bb9-71-ZjL"/>
+                                <constraint firstAttribute="height" constant="63" id="VfD-Wy-HnB"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试试其他人的吧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q76-K7-SPR">
+                            <rect key="frame" x="25" y="158" width="275" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="igu-bY-rtZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Q76-K7-SPR" firstAttribute="top" secondItem="Ik8-Bf-z8L" secondAttribute="bottom" constant="3" id="0aw-dK-trM"/>
+                        <constraint firstAttribute="trailing" secondItem="kUZ-WY-H4n" secondAttribute="trailing" id="IYl-Sq-Kl2"/>
+                        <constraint firstAttribute="bottom" secondItem="kUZ-WY-H4n" secondAttribute="bottom" id="KSl-70-I1L"/>
+                        <constraint firstItem="Ik8-Bf-z8L" firstAttribute="leading" secondItem="RSK-bB-bey" secondAttribute="leading" constant="25" id="KTN-5R-Bcp"/>
+                        <constraint firstItem="kUZ-WY-H4n" firstAttribute="leading" secondItem="RSK-bB-bey" secondAttribute="leading" id="Pef-Oc-EF6"/>
+                        <constraint firstItem="Ik8-Bf-z8L" firstAttribute="top" secondItem="IpH-Pc-yia" secondAttribute="bottom" constant="17" id="ZHg-Xe-h0I"/>
+                        <constraint firstAttribute="trailing" secondItem="Ik8-Bf-z8L" secondAttribute="trailing" constant="25" id="ajU-Tp-pfw"/>
+                        <constraint firstItem="Q76-K7-SPR" firstAttribute="leading" secondItem="RSK-bB-bey" secondAttribute="leading" constant="25" id="ctQ-2F-E2a"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="286" id="eBM-FD-eXT"/>
+                        <constraint firstItem="kUZ-WY-H4n" firstAttribute="top" secondItem="RSK-bB-bey" secondAttribute="top" id="hYB-6U-w32"/>
+                        <constraint firstAttribute="trailing" secondItem="tRD-xb-ICg" secondAttribute="trailing" constant="38" id="j8W-lW-mJi"/>
+                        <constraint firstAttribute="trailing" secondItem="Q76-K7-SPR" secondAttribute="trailing" constant="25" id="jeH-M1-HP5"/>
+                        <constraint firstAttribute="height" constant="286" id="oh1-5J-8uY"/>
+                        <constraint firstItem="IpH-Pc-yia" firstAttribute="centerX" secondItem="RSK-bB-bey" secondAttribute="centerX" id="pN3-lj-BQS"/>
+                        <constraint firstItem="tRD-xb-ICg" firstAttribute="top" secondItem="Q76-K7-SPR" secondAttribute="bottom" constant="13" id="qko-cU-Nlk"/>
+                        <constraint firstItem="tRD-xb-ICg" firstAttribute="leading" secondItem="RSK-bB-bey" secondAttribute="leading" constant="38" id="rw7-S9-n3Y"/>
+                        <constraint firstItem="IpH-Pc-yia" firstAttribute="top" secondItem="RSK-bB-bey" secondAttribute="top" constant="54" id="ym0-oF-CTV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.13725490196078433" blue="0.14509803921568626" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="RSK-bB-bey" secondAttribute="trailing" constant="25" id="8Ib-3y-toy"/>
+                <constraint firstItem="RSK-bB-bey" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c8j-VE-nI2"/>
+                <constraint firstItem="RSK-bB-bey" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="mwN-Bz-Idq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_pop_wszl" width="333" height="504"/>
+        <image name="btn_rm_off_red" width="250" height="40"/>
+        <image name="icon_tx_cwsj" width="71" height="63"/>
+    </resources>
+</document>

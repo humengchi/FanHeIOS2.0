@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewRecommendCell" id="gTV-IL-0wX" customClass="NewRecommendCell">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="143"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view tag="201" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Son-Cz-g0O">
+                        <rect key="frame" x="0.0" y="0.0" width="115" height="143"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_tj_checked2" translatesAutoresizingMaskIntoConstraints="NO" id="sP2-Hn-ed0">
+                                <rect key="frame" x="0.0" y="0.0" width="115" height="143"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="head_image_default" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-H5-fmY">
+                                <rect key="frame" x="27.5" y="15" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JZt-dv-MkT"/>
+                                    <constraint firstAttribute="width" constant="60" id="UoD-qs-V9B"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_zy_v" translatesAutoresizingMaskIntoConstraints="NO" id="znw-Fl-pUE">
+                                <rect key="frame" x="73.5" y="61" width="14" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="9qh-sW-O5a"/>
+                                    <constraint firstAttribute="width" constant="14" id="ZFK-8l-MPi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="201" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXL-wv-Rhq">
+                                <rect key="frame" x="89" y="5" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EEd-mJ-Gl6"/>
+                                    <constraint firstAttribute="width" constant="21" id="aMY-au-uSj"/>
+                                </constraints>
+                                <state key="normal" image="icon_checkbox_uncheck"/>
+                                <state key="selected" image="icon_checkbox_checked"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="叶小平" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNM-VH-28d">
+                                <rect key="frame" x="13" y="81" width="90" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="RHn-eP-nca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海弗雷梅有限公" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cae-9g-TTt">
+                                <rect key="frame" x="13" y="101" width="90" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="fGM-xt-zpC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海弗雷梅有限公" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tm8-Sk-i21">
+                                <rect key="frame" x="13" y="117" width="90" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="9WA-bn-AzO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cae-9g-TTt" secondAttribute="trailing" constant="12" id="1WO-Dy-ePe"/>
+                            <constraint firstItem="znw-Fl-pUE" firstAttribute="trailing" secondItem="7DB-H5-fmY" secondAttribute="trailing" id="5OT-g3-ynD"/>
+                            <constraint firstAttribute="bottom" secondItem="sP2-Hn-ed0" secondAttribute="bottom" id="5di-df-kJV"/>
+                            <constraint firstAttribute="trailing" secondItem="sP2-Hn-ed0" secondAttribute="trailing" id="7eT-zD-fgM"/>
+                            <constraint firstItem="sP2-Hn-ed0" firstAttribute="leading" secondItem="Son-Cz-g0O" secondAttribute="leading" id="9Lj-EE-jEs"/>
+                            <constraint firstItem="7DB-H5-fmY" firstAttribute="centerX" secondItem="Son-Cz-g0O" secondAttribute="centerX" id="9dx-Qz-OaB"/>
+                            <constraint firstAttribute="trailing" secondItem="Tm8-Sk-i21" secondAttribute="trailing" constant="12" id="AEh-BY-Mgm"/>
+                            <constraint firstItem="cae-9g-TTt" firstAttribute="leading" secondItem="Son-Cz-g0O" secondAttribute="leading" constant="13" id="BRy-SK-0Wa"/>
+                            <constraint firstItem="cae-9g-TTt" firstAttribute="top" secondItem="kNM-VH-28d" secondAttribute="bottom" constant="6" id="CR2-0o-Ir9"/>
+                            <constraint firstItem="Tm8-Sk-i21" firstAttribute="leading" secondItem="Son-Cz-g0O" secondAttribute="leading" constant="13" id="E55-C0-JR4"/>
+                            <constraint firstAttribute="trailing" secondItem="eXL-wv-Rhq" secondAttribute="trailing" constant="5" id="IJG-lE-frg"/>
+                            <constraint firstItem="eXL-wv-Rhq" firstAttribute="top" secondItem="Son-Cz-g0O" secondAttribute="top" constant="5" id="Ujd-Ey-7BO"/>
+                            <constraint firstItem="kNM-VH-28d" firstAttribute="top" secondItem="7DB-H5-fmY" secondAttribute="bottom" constant="6" id="cMU-z2-l6H"/>
+                            <constraint firstItem="Tm8-Sk-i21" firstAttribute="top" secondItem="cae-9g-TTt" secondAttribute="bottom" constant="4" id="dAO-Jk-dTs"/>
+                            <constraint firstItem="znw-Fl-pUE" firstAttribute="bottom" secondItem="7DB-H5-fmY" secondAttribute="bottom" id="eSp-Ch-mEc"/>
+                            <constraint firstItem="sP2-Hn-ed0" firstAttribute="top" secondItem="Son-Cz-g0O" secondAttribute="top" id="ifQ-A9-QVe"/>
+                            <constraint firstItem="kNM-VH-28d" firstAttribute="leading" secondItem="Son-Cz-g0O" secondAttribute="leading" constant="13" id="mhe-cK-CM2"/>
+                            <constraint firstAttribute="trailing" secondItem="kNM-VH-28d" secondAttribute="trailing" constant="12" id="qwX-Rw-qNK"/>
+                            <constraint firstAttribute="bottom" secondItem="Tm8-Sk-i21" secondAttribute="bottom" constant="14" id="tOI-AL-pDS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Son-Cz-g0O" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="B0j-Y7-syl"/>
+                <constraint firstAttribute="bottom" secondItem="Son-Cz-g0O" secondAttribute="bottom" id="aVu-EN-bio"/>
+                <constraint firstItem="Son-Cz-g0O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eTg-80-PNs"/>
+                <constraint firstAttribute="trailing" secondItem="Son-Cz-g0O" secondAttribute="trailing" id="q8x-Oc-Z6z"/>
+            </constraints>
+            <connections>
+                <outlet property="firstBgImageView" destination="sP2-Hn-ed0" id="XOe-XD-MnN"/>
+                <outlet property="firstCompanyLabel" destination="cae-9g-TTt" id="59w-yK-cdT"/>
+                <outlet property="firstHeaderImageView" destination="7DB-H5-fmY" id="4nw-m9-UEw"/>
+                <outlet property="firstNameLabel" destination="kNM-VH-28d" id="Zos-H1-YL6"/>
+                <outlet property="firstPositionLabel" destination="Tm8-Sk-i21" id="jce-yy-fgf"/>
+                <outlet property="firstSelectedBtn" destination="eXL-wv-Rhq" id="Hh8-WW-ogw"/>
+                <outlet property="firstView" destination="sP2-Hn-ed0" id="OQp-l2-vFB"/>
+                <outlet property="firstVipImageView" destination="znw-Fl-pUE" id="xqR-8s-pks"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bg_tj_checked2" width="110" height="143"/>
+        <image name="btn_zy_v" width="15" height="16"/>
+        <image name="head_image_default" width="375" height="375"/>
+        <image name="icon_checkbox_checked" width="21" height="21"/>
+        <image name="icon_checkbox_uncheck" width="21" height="21"/>
+    </resources>
+</document>

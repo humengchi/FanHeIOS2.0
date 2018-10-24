@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChangeInformationViewGuid">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_next_gray" translatesAutoresizingMaskIntoConstraints="NO" id="YWN-NS-d2G">
+                    <rect key="frame" x="351" y="17" width="8" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="8" id="GCk-EC-KWw"/>
+                        <constraint firstAttribute="height" constant="15" id="fYA-ML-hQh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQd-NE-Hop">
+                    <rect key="frame" x="26" y="14" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1v-WZ-93H">
+                    <rect key="frame" x="99" y="14" width="42" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196078431371" green="0.27450980392156865" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0D-Lc-4nZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Ser-nz-cab"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7t-z8-INp">
+                    <rect key="frame" x="0.0" y="81.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="q1Z-bd-jXL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="g7t-z8-INp" secondAttribute="bottom" id="JY3-ny-TYZ"/>
+                <constraint firstItem="K0D-Lc-4nZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Otg-Hq-0WH"/>
+                <constraint firstItem="g7t-z8-INp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qfq-I1-sWX"/>
+                <constraint firstAttribute="trailing" secondItem="g7t-z8-INp" secondAttribute="trailing" id="Wny-Az-k7b"/>
+                <constraint firstItem="K0D-Lc-4nZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dY4-SS-yG1"/>
+                <constraint firstAttribute="trailing" secondItem="YWN-NS-d2G" secondAttribute="trailing" constant="16" id="hyI-rI-cTK"/>
+                <constraint firstAttribute="trailing" secondItem="K0D-Lc-4nZ" secondAttribute="trailing" id="wT8-SI-I54"/>
+                <constraint firstItem="YWN-NS-d2G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="yRm-Yl-K2C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameLabel" destination="GQd-NE-Hop" id="pSs-iB-dyI"/>
+                <outlet property="sideLabel" destination="e1v-WZ-93H" id="0ZG-8Y-Sig"/>
+                <outletCollection property="gestureRecognizers" destination="1T9-9v-PDg" appends="YES" id="PQa-ed-bvV"/>
+            </connections>
+            <point key="canvasLocation" x="101.5" y="622"/>
+        </view>
+        <tapGestureRecognizer id="1T9-9v-PDg">
+            <connections>
+                <action selector="gotoTaMainPageChangeAction:" destination="iN0-l3-epB" id="sd7-Ey-6KI"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="icon_next_gray" width="8" height="15"/>
+    </resources>
+</document>

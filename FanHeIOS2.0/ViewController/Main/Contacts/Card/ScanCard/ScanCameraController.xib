@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanCameraController">
+            <connections>
+                <outlet property="flashAutoButton" destination="HEj-Ha-eGp" id="tpQ-0d-Awe"/>
+                <outlet property="flashButton" destination="zYZ-QW-b95" id="7wd-HY-iyc"/>
+                <outlet property="flashOffButton" destination="Xeu-V6-oNC" id="tAy-BU-tzi"/>
+                <outlet property="flashOnButton" destination="Ubg-6w-ntl" id="uuM-P6-mw2"/>
+                <outlet property="focusCursor" destination="g6D-st-IJ1" id="mQU-E7-ov4"/>
+                <outlet property="takeButton" destination="agq-jY-PCf" id="J8l-3i-UTI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iJd-iv-ucO"/>
+                <outlet property="viewContainer" destination="QYe-7m-GOk" id="cVl-9E-rYT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYe-7m-GOk">
+                    <rect key="frame" x="0.0" y="44" width="375" height="535"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon_smmp_xzk" translatesAutoresizingMaskIntoConstraints="NO" id="g6D-st-IJ1">
+                            <rect key="frame" x="52" y="186" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agq-jY-PCf">
+                    <rect key="frame" x="158" y="579" width="60" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="1Br-xB-pmB"/>
+                        <constraint firstAttribute="width" constant="60" id="hfv-cU-YEj"/>
+                    </constraints>
+                    <state key="normal" image="btn_smmp_pz">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="takeButtonClick:" destination="-1" eventType="touchUpInside" id="dhM-3c-ID2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjc-1M-tER">
+                    <rect key="frame" x="0.0" y="579" width="78" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="88" id="hzm-7y-YWM"/>
+                        <constraint firstAttribute="width" constant="78" id="r6W-ko-RaH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="相册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="photoClick:" destination="-1" eventType="touchUpInside" id="KlC-Rb-pbf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ys-fd-ErU">
+                    <rect key="frame" x="297" y="579" width="78" height="88"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="BlM-CM-ttA"/>
+                        <constraint firstAttribute="height" constant="88" id="EDH-9F-a5W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="navBackClick:" destination="-1" eventType="touchUpInside" id="LGS-Id-NRY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYZ-QW-b95">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Zz1-7M-ic4"/>
+                        <constraint firstAttribute="height" constant="44" id="b3g-fc-TxS"/>
+                    </constraints>
+                    <state key="normal" image="btn_smmp_flashopen">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="flashChoiceClick:" destination="-1" eventType="touchUpInside" id="BET-oe-h7H"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEj-Ha-eGp">
+                    <rect key="frame" x="89" y="0.0" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="hEL-Aa-j1V"/>
+                        <constraint firstAttribute="height" constant="44" id="x5e-al-D22"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="自动">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.88627450980392153" green="0.28627450980392155" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="flashAutoClick:" destination="-1" eventType="touchUpInside" id="hkO-J3-XtL"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubg-6w-ntl">
+                    <rect key="frame" x="162" y="0.0" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="6Tg-22-0sm"/>
+                        <constraint firstAttribute="height" constant="44" id="iWj-mj-ihU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="打开">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.88627450980392153" green="0.28627450980392155" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="flashOnClick:" destination="-1" eventType="touchUpInside" id="88b-Um-8lS"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeu-V6-oNC">
+                    <rect key="frame" x="235" y="0.0" width="50" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="sgk-0u-6tk"/>
+                        <constraint firstAttribute="width" constant="50" id="xyG-er-nAz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="关闭">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="0.88627450980392153" green="0.28627450980392155" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="flashOffClick:" destination="-1" eventType="touchUpInside" id="Eeh-wt-b3b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QYe-7m-GOk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1zg-JM-HAd"/>
+                <constraint firstItem="Ubg-6w-ntl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3oG-Vk-nRU"/>
+                <constraint firstItem="Xeu-V6-oNC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5cX-8i-3Rk"/>
+                <constraint firstAttribute="bottom" secondItem="QYe-7m-GOk" secondAttribute="bottom" constant="88" id="CbT-0P-BlN"/>
+                <constraint firstItem="QYe-7m-GOk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="44" id="D4u-mh-tYF"/>
+                <constraint firstItem="Xeu-V6-oNC" firstAttribute="leading" secondItem="Ubg-6w-ntl" secondAttribute="trailing" constant="23" id="OG9-TL-ZSf"/>
+                <constraint firstAttribute="bottom" secondItem="pjc-1M-tER" secondAttribute="bottom" id="RqG-S6-uFF"/>
+                <constraint firstItem="Ubg-6w-ntl" firstAttribute="leading" secondItem="HEj-Ha-eGp" secondAttribute="trailing" constant="23" id="VOw-7I-eeG"/>
+                <constraint firstAttribute="trailing" secondItem="6ys-fd-ErU" secondAttribute="trailing" id="b76-gA-ZTs"/>
+                <constraint firstAttribute="trailing" secondItem="QYe-7m-GOk" secondAttribute="trailing" id="bNS-a4-jat"/>
+                <constraint firstItem="zYZ-QW-b95" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fj5-gh-2a4"/>
+                <constraint firstItem="zYZ-QW-b95" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ubf-2d-sg7"/>
+                <constraint firstItem="agq-jY-PCf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="vXE-Dt-ThJ"/>
+                <constraint firstAttribute="bottom" secondItem="agq-jY-PCf" secondAttribute="bottom" id="vz0-F5-yAQ"/>
+                <constraint firstItem="HEj-Ha-eGp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xaE-3l-i4O"/>
+                <constraint firstItem="pjc-1M-tER" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xf6-vf-l2W"/>
+                <constraint firstItem="HEj-Ha-eGp" firstAttribute="leading" secondItem="zYZ-QW-b95" secondAttribute="trailing" constant="39" id="xr6-Zh-a70"/>
+                <constraint firstAttribute="bottom" secondItem="6ys-fd-ErU" secondAttribute="bottom" id="zmb-sE-hvb"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_smmp_flashopen" width="21" height="21"/>
+        <image name="btn_smmp_pz" width="60" height="60"/>
+        <image name="icon_smmp_xzk" width="77" height="77"/>
+    </resources>
+</document>

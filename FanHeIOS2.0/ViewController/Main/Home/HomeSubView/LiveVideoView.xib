@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LiveVideoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYt-OD-ZGi">
+                    <rect key="frame" x="153" y="16" width="69.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69.5" id="09A-ep-clf"/>
+                        <constraint firstAttribute="height" constant="17" id="8Lx-mF-Paf"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="NkG-7Y-RuS"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="Q3Q-Ad-Ekz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W6H-dZ-5Lh">
+                    <rect key="frame" x="16" y="49" width="150" height="84"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="84" id="B7S-QY-NhJ"/>
+                        <constraint firstAttribute="width" constant="150" id="y7s-fj-S7L"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJ8-hB-XI9">
+                    <rect key="frame" x="172" y="57" width="187" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="PhI-Jj-fno"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16C-Bj-oi4">
+                    <rect key="frame" x="174" y="112" width="166" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="kTQ-vG-Z9V"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.68627450980000004" green="0.71372549019999998" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="CYt-OD-ZGi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dfu-rx-5xU"/>
+                <constraint firstItem="W6H-dZ-5Lh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="J6A-dn-7dG"/>
+                <constraint firstAttribute="trailing" secondItem="16C-Bj-oi4" secondAttribute="trailing" constant="35" id="OVz-qD-oVi"/>
+                <constraint firstAttribute="trailing" secondItem="FJ8-hB-XI9" secondAttribute="trailing" constant="16" id="ct5-Vl-wYp"/>
+                <constraint firstItem="FJ8-hB-XI9" firstAttribute="leading" secondItem="W6H-dZ-5Lh" secondAttribute="trailing" constant="6" id="fMq-dJ-zXx"/>
+                <constraint firstItem="W6H-dZ-5Lh" firstAttribute="top" secondItem="CYt-OD-ZGi" secondAttribute="bottom" constant="16" id="hJa-uz-deA"/>
+                <constraint firstItem="16C-Bj-oi4" firstAttribute="top" secondItem="CYt-OD-ZGi" secondAttribute="bottom" constant="79" id="kxg-Fg-ZgR"/>
+                <constraint firstItem="FJ8-hB-XI9" firstAttribute="top" secondItem="CYt-OD-ZGi" secondAttribute="bottom" constant="24" id="qwq-4Q-MAY"/>
+                <constraint firstItem="CYt-OD-ZGi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="u7I-t8-MhU"/>
+                <constraint firstItem="16C-Bj-oi4" firstAttribute="leading" secondItem="W6H-dZ-5Lh" secondAttribute="trailing" constant="8" id="zAk-we-tqT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addressLabel" destination="16C-Bj-oi4" id="ja2-mJ-1gL"/>
+                <outlet property="coverImageView" destination="W6H-dZ-5Lh" id="ikp-0K-9r1"/>
+                <outlet property="liveVideoStat" destination="CYt-OD-ZGi" id="qHR-Zo-1PK"/>
+                <outlet property="titlaLabel" destination="FJ8-hB-XI9" id="ytn-pa-DiL"/>
+                <outletCollection property="gestureRecognizers" destination="5cA-qv-Mp9" appends="YES" id="feG-hq-0MO"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="37"/>
+        </view>
+        <tapGestureRecognizer id="5cA-qv-Mp9">
+            <connections>
+                <action selector="lookLiveVideoAction:" destination="iN0-l3-epB" id="ft0-Yt-g9p"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

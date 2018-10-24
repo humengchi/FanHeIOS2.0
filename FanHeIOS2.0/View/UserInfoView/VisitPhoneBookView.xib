@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7G8-zm-oTK" customClass="VisitPhoneBookView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tep-r7-Nd0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="cancleButtonClicked:" destination="7G8-zm-oTK" eventType="touchUpInside" id="7Jk-rj-wVV"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mal-gt-0SI">
+                    <rect key="frame" x="25" y="190.5" width="325" height="286"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pop_wszl" translatesAutoresizingMaskIntoConstraints="NO" id="WW9-OK-r69">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="286"/>
+                            <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.90000000000000002"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="启用手机通讯录匹配" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="jcz-6Q-aW0">
+                            <rect key="frame" x="25" y="130" width="275" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="PXb-aX-V72"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghk-W7-hps">
+                            <rect key="frame" x="38" y="201" width="249" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="QcP-NG-ChD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="查看通讯录" backgroundImage="btn_rm_off_red"/>
+                            <connections>
+                                <action selector="gotoPhoneBookButtonClicked:" destination="7G8-zm-oTK" eventType="touchUpInside" id="S1H-08-Y88"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_warn_list" translatesAutoresizingMaskIntoConstraints="NO" id="F0Z-mV-XJS">
+                            <rect key="frame" x="125" y="38" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="75" id="abZ-iQ-crE"/>
+                                <constraint firstAttribute="width" constant="75" id="mw4-0u-nog"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来看看有多少好友在玩“3号圈”" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="LbZ-68-HLp">
+                            <rect key="frame" x="25" y="154" width="275" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="q4f-QJ-8cU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="jcz-6Q-aW0" secondAttribute="trailing" constant="25" id="4h2-gG-xKz"/>
+                        <constraint firstItem="LbZ-68-HLp" firstAttribute="leading" secondItem="Mal-gt-0SI" secondAttribute="leading" constant="25" id="4l7-65-pX4"/>
+                        <constraint firstItem="jcz-6Q-aW0" firstAttribute="leading" secondItem="Mal-gt-0SI" secondAttribute="leading" constant="25" id="55U-7l-BxM"/>
+                        <constraint firstAttribute="trailing" secondItem="Ghk-W7-hps" secondAttribute="trailing" constant="38" id="CAK-eJ-cfZ"/>
+                        <constraint firstAttribute="bottom" secondItem="WW9-OK-r69" secondAttribute="bottom" id="Sg5-FH-MUu"/>
+                        <constraint firstItem="Ghk-W7-hps" firstAttribute="top" secondItem="LbZ-68-HLp" secondAttribute="bottom" constant="26" id="Why-Ou-7wQ"/>
+                        <constraint firstItem="jcz-6Q-aW0" firstAttribute="top" secondItem="F0Z-mV-XJS" secondAttribute="bottom" constant="17" id="ZeC-C9-QxG"/>
+                        <constraint firstItem="F0Z-mV-XJS" firstAttribute="top" secondItem="Mal-gt-0SI" secondAttribute="top" constant="38" id="loo-xM-ozs"/>
+                        <constraint firstItem="F0Z-mV-XJS" firstAttribute="centerX" secondItem="Mal-gt-0SI" secondAttribute="centerX" id="n0F-K0-LF5"/>
+                        <constraint firstItem="WW9-OK-r69" firstAttribute="top" secondItem="Mal-gt-0SI" secondAttribute="top" id="nVr-78-Mgk"/>
+                        <constraint firstAttribute="trailing" secondItem="WW9-OK-r69" secondAttribute="trailing" id="ooL-I2-P9i"/>
+                        <constraint firstAttribute="trailing" secondItem="LbZ-68-HLp" secondAttribute="trailing" constant="25" id="qCC-9w-5dm"/>
+                        <constraint firstItem="Ghk-W7-hps" firstAttribute="leading" secondItem="Mal-gt-0SI" secondAttribute="leading" constant="38" id="u4q-Ry-iH4"/>
+                        <constraint firstItem="LbZ-68-HLp" firstAttribute="top" secondItem="jcz-6Q-aW0" secondAttribute="bottom" constant="3" id="x41-Y9-H1I"/>
+                        <constraint firstItem="WW9-OK-r69" firstAttribute="leading" secondItem="Mal-gt-0SI" secondAttribute="leading" id="xDa-so-7k8"/>
+                        <constraint firstAttribute="height" constant="286" id="y0O-VK-s2o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.13725490196078433" blue="0.14509803921568626" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tep-r7-Nd0" secondAttribute="trailing" id="INk-vN-jbX"/>
+                <constraint firstItem="Mal-gt-0SI" firstAttribute="centerY" secondItem="7G8-zm-oTK" secondAttribute="centerY" id="Ihf-GC-RpH"/>
+                <constraint firstItem="Tep-r7-Nd0" firstAttribute="leading" secondItem="7G8-zm-oTK" secondAttribute="leading" id="PjO-Uh-ZJ3"/>
+                <constraint firstAttribute="trailing" secondItem="Mal-gt-0SI" secondAttribute="trailing" constant="25" id="R2M-LG-ZKB"/>
+                <constraint firstItem="Tep-r7-Nd0" firstAttribute="top" secondItem="7G8-zm-oTK" secondAttribute="top" id="aOo-0h-sm7"/>
+                <constraint firstItem="Mal-gt-0SI" firstAttribute="leading" secondItem="7G8-zm-oTK" secondAttribute="leading" constant="25" id="hXQ-z4-tgv"/>
+                <constraint firstAttribute="bottom" secondItem="Tep-r7-Nd0" secondAttribute="bottom" id="rbM-jl-0M8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancleBtn" destination="Tep-r7-Nd0" id="wIA-nC-rWU"/>
+                <outlet property="clickedBtn" destination="Ghk-W7-hps" id="Ekh-oz-OXq"/>
+                <outlet property="subTitleLabel" destination="LbZ-68-HLp" id="Axq-UE-KdU"/>
+            </connections>
+            <point key="canvasLocation" x="292.5" y="354.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_pop_wszl" width="333" height="504"/>
+        <image name="btn_rm_off_red" width="250" height="40"/>
+        <image name="icon_warn_list" width="75" height="75"/>
+    </resources>
+</document>

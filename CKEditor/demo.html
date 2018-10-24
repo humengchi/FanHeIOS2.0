@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright (c) 2003-2012, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<head>
+
+	<title>CKEditor</title>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type" />
+	<script type="text/javascript" src="ckeditor.js"></script>
+	<script src="setup-script.js"></script>
+</head>
+<body>
+	<div id="editor"></div>
+    <div id="editorwarn" style="color:#e23e29;font-size:10px;text-align:right;padding-right:16px"></div>
+    <script>
+        var selected_ranges;
+
+<!--        initSample();-->
+        
+        CKEDITOR.replace('editor', {
+<!--            allowedContent: true,-->
+<!--            height: 150,-->
+<!--            enterMode:2,-->
+            allowedContent: true,
+        });
+
+        function setPosition() {
+            var s = CKEDITOR.instances.editor.getSelection();
+            selected_ranges = s.getRanges();
+        }
+        
+        function restorePosition() {
+            var s = CKEDITOR.instances.editor.getSelection();
+            s.selectRanges(selected_ranges);
+        }
+    
+        function movetostart() {
+            var editor = CKEDITOR.instances.editor;
+            editor.focus();
+            var range = editor.createRange();
+            range.moveToElementEditStart(editor.editable());
+            range.select();
+            range.scrollIntoView();
+        }
+        CKEDITOR.instances.editor.on('change', function (event) {
+            var editor = CKEDITOR.instances.editor;
+            var oldhtml = editor.getData();
+            var normalizedText = oldhtml.replace(/<[^>]+>/g, "");
+            console.log(normalizedText + "   " + normalizedText.length);
+
+            if (normalizedText.length > 300) {
+                document.getElementById("editorwarn").textContent = "最多输入300个字";
+            } else {
+                document.getElementById("editorwarn").textContent = "";
+            };
+        });
+            </script>
+
+</body>
+</html>

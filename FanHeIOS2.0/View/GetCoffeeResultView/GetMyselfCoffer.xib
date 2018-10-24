@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GetMyselfCoffer">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FKZ-1i-K5m">
+                    <rect key="frame" x="25" y="190" width="325" height="286"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_pop_wszl" translatesAutoresizingMaskIntoConstraints="NO" id="26O-gm-jbW">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="286"/>
+                            <rect key="contentStretch" x="0.0" y="0.050000000000000003" width="1" height="0.90000000000000002"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真不巧刚刚有人领走了Ta的咖啡" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="d6A-Lx-fTj">
+                            <rect key="frame" x="25" y="145" width="275" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Zss-uZ-TfL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.25490196079999999" green="0.27450980390000002" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnx-c2-Ctm">
+                            <rect key="frame" x="38" y="204" width="249" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="uCX-03-lU6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确定" backgroundImage="btn_rm_off_red"/>
+                            <connections>
+                                <action selector="getMyselfOrNoCoffer:" destination="iN0-l3-epB" eventType="touchUpInside" id="O6x-dn-ZvQ"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tx_cwsj" translatesAutoresizingMaskIntoConstraints="NO" id="cvG-Fb-bXq">
+                            <rect key="frame" x="127" y="54" width="71" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="2o1-Ea-1X6"/>
+                                <constraint firstAttribute="width" constant="71" id="46V-Wl-z75"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="26O-gm-jbW" firstAttribute="top" secondItem="FKZ-1i-K5m" secondAttribute="top" id="4to-bo-MYc"/>
+                        <constraint firstAttribute="bottom" secondItem="26O-gm-jbW" secondAttribute="bottom" id="BPB-nX-Vq7"/>
+                        <constraint firstAttribute="trailing" secondItem="d6A-Lx-fTj" secondAttribute="trailing" constant="25" id="E1k-wU-Z7s"/>
+                        <constraint firstAttribute="height" constant="286" id="Hcl-oj-rEg"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="286" id="Hnz-6G-ac1"/>
+                        <constraint firstAttribute="trailing" secondItem="26O-gm-jbW" secondAttribute="trailing" id="Q0b-Nf-fek"/>
+                        <constraint firstItem="Pnx-c2-Ctm" firstAttribute="leading" secondItem="FKZ-1i-K5m" secondAttribute="leading" constant="38" id="RnH-bt-tyc"/>
+                        <constraint firstItem="d6A-Lx-fTj" firstAttribute="top" secondItem="cvG-Fb-bXq" secondAttribute="bottom" constant="28" id="Unz-oe-VlB"/>
+                        <constraint firstItem="cvG-Fb-bXq" firstAttribute="top" secondItem="FKZ-1i-K5m" secondAttribute="top" constant="54" id="XCa-ND-h0C"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="286" id="ZH4-im-BDh"/>
+                        <constraint firstAttribute="trailing" secondItem="Pnx-c2-Ctm" secondAttribute="trailing" constant="38" id="eg1-Xb-cWj"/>
+                        <constraint firstItem="d6A-Lx-fTj" firstAttribute="leading" secondItem="FKZ-1i-K5m" secondAttribute="leading" constant="25" id="g5U-1s-j2c"/>
+                        <constraint firstItem="26O-gm-jbW" firstAttribute="leading" secondItem="FKZ-1i-K5m" secondAttribute="leading" id="gI1-ad-k8V"/>
+                        <constraint firstItem="cvG-Fb-bXq" firstAttribute="centerX" secondItem="FKZ-1i-K5m" secondAttribute="centerX" id="i6o-ti-ZjD"/>
+                        <constraint firstItem="Pnx-c2-Ctm" firstAttribute="top" secondItem="d6A-Lx-fTj" secondAttribute="bottom" constant="38" id="uHT-Rv-8y4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.13725490196078433" blue="0.14509803921568626" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FKZ-1i-K5m" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="78Z-gS-Ddw"/>
+                <constraint firstItem="FKZ-1i-K5m" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9cD-B1-uvi"/>
+                <constraint firstAttribute="trailing" secondItem="FKZ-1i-K5m" secondAttribute="trailing" constant="25" id="jb8-8i-gxj"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="d6A-Lx-fTj" id="K9r-TR-lGT"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_pop_wszl" width="333" height="504"/>
+        <image name="btn_rm_off_red" width="250" height="40"/>
+        <image name="icon_tx_cwsj" width="71" height="63"/>
+    </resources>
+</document>

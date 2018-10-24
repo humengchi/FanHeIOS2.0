@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketPersonInfoController">
+            <connections>
+                <outlet property="nextBtn" destination="hPd-3d-oHM" id="OOS-MB-Sd4"/>
+                <outlet property="nextView" destination="uzm-ve-h70" id="330-kQ-yhC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </view>
+        <view contentMode="scaleToFill" id="uzm-ve-h70">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPd-3d-oHM">
+                    <rect key="frame" x="17" y="6.5" width="341" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="RZk-KW-O2Q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="下一步" backgroundImage="btn_bg_se">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" backgroundImage="btn_bg_se"/>
+                    <state key="selected" backgroundImage="btn_bg_ls"/>
+                    <connections>
+                        <action selector="nextButtonClicked:" destination="-1" eventType="touchUpInside" id="XTN-ng-ZNW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX2-y5-ysN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="xP2-4f-jmR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iX2-y5-ysN" secondAttribute="trailing" id="3kz-MY-Jbr"/>
+                <constraint firstItem="iX2-y5-ysN" firstAttribute="top" secondItem="uzm-ve-h70" secondAttribute="top" id="69r-GV-iOP"/>
+                <constraint firstAttribute="trailing" secondItem="hPd-3d-oHM" secondAttribute="trailing" constant="17" id="GcB-Zb-K1k"/>
+                <constraint firstItem="hPd-3d-oHM" firstAttribute="leading" secondItem="uzm-ve-h70" secondAttribute="leading" constant="17" id="MVP-vf-Vsc"/>
+                <constraint firstItem="hPd-3d-oHM" firstAttribute="top" secondItem="uzm-ve-h70" secondAttribute="top" constant="6.5" id="NQp-hM-bUv"/>
+                <constraint firstItem="iX2-y5-ysN" firstAttribute="leading" secondItem="uzm-ve-h70" secondAttribute="leading" id="rFl-e3-5qA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-535" y="577"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_bg_ls" width="310" height="36"/>
+        <image name="btn_bg_se" width="310" height="36"/>
+    </resources>
+</document>

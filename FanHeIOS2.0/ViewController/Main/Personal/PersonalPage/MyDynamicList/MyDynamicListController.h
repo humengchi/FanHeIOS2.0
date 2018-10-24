@@ -1,0 +1,15 @@
+//
+//  MyDynamicListController.h
+//  FanHeIOS2.0
+//
+//  Created by 胡梦驰 on 2017/3/9.
+//  Copyright © 2017年 胡梦驰. All rights reserved.
+//
+
+#import "BaseViewController.h"
+
+@interface MyDynamicListController : BaseViewController
+
+@property (nonatomic, strong)   NSNumber *userID;
+
+@end

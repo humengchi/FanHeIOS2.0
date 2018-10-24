@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePhoneController">
+            <connections>
+                <outlet property="phoneLabel" destination="THh-bj-Oka" id="gmL-I9-syO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_telephone_cg" translatesAutoresizingMaskIntoConstraints="NO" id="tIo-dw-1u7">
+                    <rect key="frame" x="165" y="171" width="44" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="7ko-A5-ik4"/>
+                        <constraint firstAttribute="height" constant="75" id="w14-2i-Q07"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的手机号：139 0000 0000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THh-bj-Oka">
+                    <rect key="frame" x="0.0" y="276" width="375" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="V1k-Mn-X6a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.50588235294117645" green="0.5490196078431373" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfJ-C8-47S">
+                    <rect key="frame" x="62" y="337" width="251" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LdU-AW-QPq"/>
+                    </constraints>
+                    <state key="normal" title="更换手机号" backgroundImage="btn-register-off">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changePhoneBtnAction:" destination="-1" eventType="touchUpInside" id="xof-5a-Wj9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tIo-dw-1u7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="171" id="82f-hm-qH6"/>
+                <constraint firstAttribute="trailing" secondItem="THh-bj-Oka" secondAttribute="trailing" id="QmE-nH-UJG"/>
+                <constraint firstItem="tIo-dw-1u7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U9d-yY-qO6"/>
+                <constraint firstItem="mfJ-C8-47S" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="62" id="VBu-vb-tkZ"/>
+                <constraint firstItem="mfJ-C8-47S" firstAttribute="top" secondItem="THh-bj-Oka" secondAttribute="bottom" constant="44" id="Z0U-m6-4Dr"/>
+                <constraint firstItem="THh-bj-Oka" firstAttribute="top" secondItem="tIo-dw-1u7" secondAttribute="bottom" constant="30" id="mWT-jT-7uX"/>
+                <constraint firstAttribute="trailing" secondItem="mfJ-C8-47S" secondAttribute="trailing" constant="62" id="oJ7-ED-vwb"/>
+                <constraint firstItem="THh-bj-Oka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xPr-qC-baI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="260.5" y="259"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn-register-off" width="250" height="40"/>
+        <image name="icon_telephone_cg" width="43" height="75"/>
+    </resources>
+</document>

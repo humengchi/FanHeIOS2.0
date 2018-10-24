@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterGuideViewController">
+            <connections>
+                <outlet property="adminLoginLabel" destination="dog-KH-6bg" id="3VN-2S-uox"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_zc" translatesAutoresizingMaskIntoConstraints="NO" id="vds-Wy-7kp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fV-3h-vsq">
+                    <rect key="frame" x="63" y="511" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="0fV-3h-vsq" secondAttribute="height" multiplier="25:4" id="CvA-dk-iwk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="登录" backgroundImage="btn_login_off">
+                        <color key="titleColor" red="0.88627450980392153" green="0.28627450980392155" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonClicked:" destination="-1" eventType="touchUpInside" id="sZi-K3-tFq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N90-uj-m7f">
+                    <rect key="frame" x="63" y="567" width="250" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="N90-uj-m7f" secondAttribute="height" multiplier="25:4" id="uog-CK-Y6h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="注册" backgroundImage="btn_rm_off_red">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="registerButtonClicked:" destination="-1" eventType="touchUpInside" id="wi1-sL-5dF"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-logo" translatesAutoresizingMaskIntoConstraints="NO" id="n1q-JE-JHI">
+                    <rect key="frame" x="98" y="183.5" width="179" height="141"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="n1q-JE-JHI" secondAttribute="height" multiplier="197:155" id="dm9-Ul-eNh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dog-KH-6bg">
+                    <rect key="frame" x="0.0" y="0.0" width="54" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2mN-VB-a94"/>
+                        <constraint firstAttribute="width" constant="54" id="Hc0-Oc-Mbf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n1q-JE-JHI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6GA-2T-5DX"/>
+                <constraint firstItem="n1q-JE-JHI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="6rw-D4-uFc"/>
+                <constraint firstItem="0fV-3h-vsq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DiJ-hp-LAg"/>
+                <constraint firstItem="N90-uj-m7f" firstAttribute="width" secondItem="vds-Wy-7kp" secondAttribute="width" multiplier="250:375" id="E28-ou-hWd"/>
+                <constraint firstAttribute="bottom" secondItem="vds-Wy-7kp" secondAttribute="bottom" id="KRl-pt-9aa"/>
+                <constraint firstAttribute="trailing" secondItem="vds-Wy-7kp" secondAttribute="trailing" id="LLz-vX-epo"/>
+                <constraint firstItem="0fV-3h-vsq" firstAttribute="width" secondItem="N90-uj-m7f" secondAttribute="width" id="MbS-oU-jz0"/>
+                <constraint firstItem="dog-KH-6bg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RRe-jM-b0U"/>
+                <constraint firstAttribute="bottom" secondItem="N90-uj-m7f" secondAttribute="bottom" constant="60" id="Thd-dg-aTF"/>
+                <constraint firstItem="vds-Wy-7kp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="biD-xh-1kQ"/>
+                <constraint firstItem="N90-uj-m7f" firstAttribute="top" secondItem="0fV-3h-vsq" secondAttribute="bottom" constant="16" id="mvQ-ep-uCz"/>
+                <constraint firstItem="N90-uj-m7f" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qBV-44-nCR"/>
+                <constraint firstItem="dog-KH-6bg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uJN-iV-o5c"/>
+                <constraint firstItem="vds-Wy-7kp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wya-XZ-lI9"/>
+                <constraint firstItem="n1q-JE-JHI" firstAttribute="width" secondItem="vds-Wy-7kp" secondAttribute="width" multiplier="179:375" id="xlu-Xx-Wl2"/>
+            </constraints>
+            <point key="canvasLocation" x="231.5" y="352.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg-logo" width="197" height="155"/>
+        <image name="bg_zc" width="375" height="667"/>
+        <image name="btn_login_off" width="250" height="40"/>
+        <image name="btn_rm_off_red" width="250" height="40"/>
+    </resources>
+</document>

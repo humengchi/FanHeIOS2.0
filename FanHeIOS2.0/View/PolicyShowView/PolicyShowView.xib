@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PolicyShowView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-fh-dtW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《“3号圈”服务协议》" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZD-Le-bQc">
+                            <rect key="frame" x="56" y="29" width="264" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="29" id="yDM-9V-dW6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IBC-tV-EiB">
+                            <rect key="frame" x="0.0" y="67" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.80973802490000002" green="0.80973802490000002" blue="0.80973802490000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="JVX-U4-lgp"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAc-RG-pKT">
+                            <rect key="frame" x="341" y="15" width="34" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="QAu-Nz-jyl"/>
+                                <constraint firstAttribute="width" constant="34" id="hA1-Gu-NUU"/>
+                            </constraints>
+                            <state key="normal" image="btn_close_gray">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeView:" destination="iN0-l3-epB" eventType="touchUpInside" id="QD9-XI-F7z"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD6-yI-lBB">
+                            <rect key="frame" x="12" y="83" width="351" height="584"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <string key="text">一、接受条款
+1、本协议为上海泛合股份有限公司（以下称“泛合公司”）与泛合公司提供的社交平台（3号圈）服务（下称“幸3号圈服务”）的使用人（下称“用户”）之间的服务协议（下称“本协议”）。
+2、泛合公司在此特别提示，用户欲使用泛合服务，必须事先认真阅读本协议全部条款（未成年人阅读时应得到其监护人的陪同），特别是本协议中免除、减轻或者限制泛合公司责任的全部条款以及含有限制用户权利内容的全部条款。
+3、用户下载、注册、登录、使用及连接泛合服务等行为均将被视为用户完全了解、接受并同意遵守本协议项下的全部内容。本协议可由泛合公司单方随时修改，修改后的协议条款一经泛合公司公布即代替本协议的原条款，构成用户与泛合公司之间就本协议主题事由的全部、最新协议。用户可以随时在泛合公司网站或泛合应用程序中查阅最新协议条款。如果用户不接受泛合公司修改后的最新协议条款，请立即停止使用泛合服务。如用户选择继续使用泛合服务，则视为用户完全了解、接受并同意遵守泛合公司修改后的最新协议条款。
+4、用户特此声明，已经完全理解本协议相关内容，并不存在任何重大误解；同时，认可协议内容并不存在显失公平的情形。
+
+二、用户信息条款
+1、用户个人信息。用户个人信息包括下列信息：用户真实姓名，公司，职位，头像，手机号码， IP地址。
+2、非用户个人信息。用户对金脉服务的操作状态、使用记录、使用习惯等反映在泛合公司服务器端的全部记录信息，及其他一切本条第1款所述的用户个人信息范围外的信息，均为普通信息，均不属于用户个人信息。
+3、第三方平台记录信息。用户通过新浪微博账号、QQ账号、微信账号等第三方平台账号（下称“第三方平台”）注册、登陆、使用金脉服务的，将被视为用户完全了解、同意并接受泛合公司已包括但不限于收集、统计、分析等方式使用其在新浪微博、QQ、微信等第三方平台上填写、登记、公布、记录的全部信息（下称“第三方平台记录信息”）。用户一旦使用第三方平台账号注册、登陆、使用金脉服务，泛合公司对该等第三方平台记录的信息的任何使用，均将被视为已经获得了用户本人的完全同意并接受。
+4、重要提示：为向客户提供金脉服务，泛合公司将可能合理使用用户个人信息、非用户个人信息及第三方平台记录信息（以下合称“用户信息”）。用户一旦注册、登陆、使用金脉服务，将视为用户完全了解、同意并接受泛合公司通过包括但不限于收集、统计、分析、使用等方式合理使用用户信息。
+5、用户个人信息的使用目的、方式和范围。用户承诺其已完全了解：泛合公司使用用户信息的目的在于：为用户提供包括好友印象、好友动态、人脉圈、人脉分布和关系链等金脉服务的各项功能；泛合公司使用用户信息的方式包括但不限于：收集、统计、分析、商业用途的使用等方式；泛合公司使用用户信息的范围包括但不限于：本条第1、2、3款所定义的用户个人信息、非用户个人信息、第三方平台记录信息等。
+6、用户查询、更正、添加信息的渠道。用户可通过金脉服务中的【更新个人信息】相关功能查询、更正、添加其授权金脉服务使用的用户信息。
+7、用户拒绝提供信息的方式及后果。用户可以通过停止使用金脉服务，不再向泛合公司提供用户信息。但是，用户此前同意泛合公司使用的用户信息，泛合公司不承担主动删除、销毁的责任。用户拒绝提供用户信息的，泛合公司可以随时停止提供金脉服务。
+8、用户授权的明确性。用户注册、登陆、使用金脉服务的行为，即视为明确同意泛合公司收集和使用其用户信息，无需其他意思表示。泛合公司对用户信息的使用无需向用户支付任何费用。
+9、特别说明：用户信息删除的选择权。金脉注册用户在使用过程中发现有任何不妥或者不满意之处，有权通过Email或者电话的方式提出申请，进行相关信息删除；泛合公司通过新浪微博、QQ、微信等第三方平台收集并在金脉上向授权用户展示的授权用户的用户好友信息，该授权用户及其好友如发现有任何不妥或者不满意之处，亦有权通过Email或者电话的方式提出申请，进行相关信息删除。（附：Email：bonnie.yang@51jinmai.com；电话：4001799686。）
+9、泛合公司承诺。泛合公司尊重授权用户的合法权利，尊重授权用户的自由选择权，不会以违反法律、行政法规以及本协议约定的方式收集、使用用户信息。
+
+三、金脉服务使用规则
+1、用户完全了解并同意：用户对以其帐号注册、登陆、使用金脉服务的全部行为，包括其提供给泛合公司的全部用户信息、以其金脉服务账号进行的所有行为和事件独立承担完全的法律责任。
+2、用户同意在使用金脉服务过程中，严格遵守以下规则：
+（1）遵守中国法律、法规、行政规章及规范性文件；
+（2）遵守泛合公司所有与金脉服务有关的协议、规定、程序、通知、使用守则等全部文件；
+（3）不得为任何违法、犯罪目的而使用金脉服务；
+（4）不得以任何形式使用金脉服务侵犯泛合公司的合法权利；
+（5）不得利用金脉服务进行任何可能对互联网正常运转造成不利影响的行为
+（6）不得利用泛合公司提供的服务上传、展示或传播任何虚假的、骚扰性的、中伤他人的、种族歧视性的、辱骂性的、恐吓性的、情色的或其他任何非法的信息资料；
+（7）不得以任何方式侵犯其他任何人依法享有的专利权、著作权、商标权、商业秘密等知识产权，第三人的名誉权或其他任何第三方的合法权益。
+（8）保证在金脉服务上展示的相关信息内容，包括但是不限于在前条“二、用户信息条款”中的内容，没有违反相关法律规定，没有侵犯第三方的合法权利。
+3、泛合公司有权对用户使用金脉服务的情况进行审查和监督，如用户在使用金脉服务时违反任何上述约定，泛合公司有权要求用户改正或直接单方面采取一切必要措施，以消除或减轻用户不当行为给泛合公司、第三方、互联网服务或社会公共利益造成的任何影响。泛合公司在进行前述操作前，操作过程中或操作完成后不对用户进行任何方式的通知。
+4、用户在使用泛合公司各项服务的同时，同意接受泛合公司发布、推送、提供的各类信息。
+5、用户同意，泛合公司有权随时变更、中止或终止部分或全部的金脉服务，泛合公司无需就此通知用户，且泛合公司不因此对用户或任何第三方承担任何责任。
+四、信息披露的免责条款
+泛合公司将按照法律法规的规定及行业规范使用用户信息，不向任何无关的第三方披露用户个人信息中能够对用户个人进行身份辨识的用户个人信息或用户个人通讯信息，但有下列情形之一的除外：
+1、事先获得了用户的明确授权；
+2、为了维护公众以及泛合公司的合法利益；
+3、泛合公司可能会与第三方合作向用户提供相关的网络服务，在此情形下，如果该等第三方同意承担与本协议约定的用户隐私保护条款同等的责任，则泛合公司有权将用户信息提供给该等第三方，无需获得用户的另行同意；
+4、按照有关的法律法规要求；
+5、按照相关政府主管部门、司法机关的要求。
+用户完全了解并同意，发生上述任何一种或多种情形时，泛合公司对向任何第三方披露用户信息的行为不承担任何责任。
+五、知识产权
+1、“知识产权”是指与金脉服务相关的各种类的过去有效的、现行有效的、或即将产生的知识产权，包括但不限于文字表述及其组合、图标、图饰、图表、色彩、界面设计、版面框架、有关数据、印刷材料、电子文档、其他知识产权以及相关申请的权利。
+2、泛合公司为与金脉服务相关的全部知识产权的权利人，对金脉服务提供过程中包含的全部知识产权，包括但不限于任何文本、图片、图形、音频或视频资料享有及保留完整、独立的全部权利。未经泛合公司同意，用户不得在任何媒体直接或间接发布、播放、出于播放或发布目的而改写或再发行泛合公司享有知识产权的或者金脉服务提供任何资料和信息，也不得将前述资料和信息用于任何商业目的。
+3、对于用户本人创作并上传到金脉网站或平台的任何文本、图片、图形、音频、视频等，泛合公司保留对其内容进行实时监控的权利，并有权依泛合公司独立判断对任何违反本协议约定或涉嫌违法、违规的内容实施删除。泛合公司对于删除用户作品引起的任何后果或导致用户的任何损失不负任何责任。
+4、本条款非经泛合公司书面同意将持续有效，不因用户关闭金脉服务账户或者停止使用金脉服务而失效。
+六、其他免责声明
+1、信息依现状提供。泛合公司提供的全部服务信息仅依照该等信息提供时的现状提供并仅供用户参考，泛合公司不对信前述信息的准确性、完整性、适用性等做任何承诺和保证。用户应对泛合公司提供的信息自行判断，并承担因使用前述信息而引起的任何、全部风险，包括因其对信息的正确性、完整性或实用性的任何依赖或信任而导致的风险。泛合公司无需对因用户使用信息的任何行为导致的任何损失承担责任。
+2、对于因不可抗力或泛合公司不能预料、或不能控制的原因（包括但不限于计算机病毒或黑客攻击、系统不稳定、用户不当使用账户、以及其他任何技术、互联网络、通信线路原因等）造成的包括但不限于用户计算机信息和数据的安全，用户个人信息的安全等给用户或任何第三方造成的任何损失等，泛合公司不承担任何责任。
+3、由于用户以违法、违规或违反本协议约定等任何方式使用金脉服务的行为，包括但不限于登录网站内容违法、不真实、不正当，侵犯第三方任何合法权益等，给泛合公司或其他第三人造成的任何损失，用户同意承担由此造成的全部损害赔偿责任。
+4、用户完全了解并同意，在使用金脉服务的过程中，可能存在来自任何其他第三方的包括威胁性的、诽谤性的、令人反感的或非法的内容或行为，也可能存在对他人权利（包括知识产权）造成侵犯的匿名、冒名、或伪造的各种信息或行为，用户须自行判断相关内容、信息、行为的安全性等风险，并自行独立承担上述风险给泛合公司或第三方造成的任何责任。
+5、泛合公司及其合作方对金脉服务的任何及全部内容不作任何形式的承诺或保证，不论是明确的或暗示的。前述承诺或保证包括但不限于：金脉服务真实性、适销性、对特定用途的适用性、任何形式的所有权保证，非侵权保证等。泛合公司对因前述未做承诺或保证的内容导致的任何直接、间接、偶然、特殊及后续的损害，不承担任何责任。
+七、适用法律和争议解决
+1、本协议的成立、生效、履行、解释及因本协议产生的任何争议，均适用中华人民共和国法律（不包括港澳台地区法律）。
+2、用户和泛合公司之间与本协议有关的任何争议，首先应友好协商解决，在争议发生之日起三十日内仍不能通过协商达成一致的，用户在此完全、不可撤销地同意将前述争议提交北京泛合天下科技发展有限公司住所地的人民法院进行诉讼。
+八、其他规定
+1、如本协议中的任何条款因任何原因完全或部分无效或不具有执行力，均不影响本协议其他条款的效力。
+2、本协议及本协议任何条款内容的最终解释权及修改权归泛合公司所有。若您对泛合公司及本服务有任何意见，欢迎垂询泛合公司客服中心。服务热线：【400-1799-686】，服务网站：【http://www.51jinmai.com/】。
+
+</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IBC-tV-EiB" firstAttribute="leading" secondItem="aLW-fh-dtW" secondAttribute="leading" id="0Eg-fj-gpO"/>
+                        <constraint firstItem="WAc-RG-pKT" firstAttribute="top" secondItem="aLW-fh-dtW" secondAttribute="top" constant="15" id="2Nd-Rz-q4c"/>
+                        <constraint firstAttribute="trailing" secondItem="iD6-yI-lBB" secondAttribute="trailing" constant="12" id="4du-HC-ybG"/>
+                        <constraint firstAttribute="bottom" secondItem="iD6-yI-lBB" secondAttribute="bottom" id="8UX-iO-NHQ"/>
+                        <constraint firstItem="HZD-Le-bQc" firstAttribute="leading" secondItem="aLW-fh-dtW" secondAttribute="leading" constant="56" id="CWO-51-n2B"/>
+                        <constraint firstAttribute="trailing" secondItem="WAc-RG-pKT" secondAttribute="trailing" id="H7k-uI-CQ7"/>
+                        <constraint firstItem="iD6-yI-lBB" firstAttribute="leading" secondItem="aLW-fh-dtW" secondAttribute="leading" constant="12" id="Hfu-oF-gHI"/>
+                        <constraint firstItem="HZD-Le-bQc" firstAttribute="top" secondItem="aLW-fh-dtW" secondAttribute="top" constant="29" id="VXP-FE-hFV"/>
+                        <constraint firstItem="iD6-yI-lBB" firstAttribute="top" secondItem="IBC-tV-EiB" secondAttribute="bottom" constant="15" id="kTf-TK-i4E"/>
+                        <constraint firstAttribute="trailing" secondItem="IBC-tV-EiB" secondAttribute="trailing" id="t33-ph-3Ag"/>
+                        <constraint firstAttribute="trailing" secondItem="HZD-Le-bQc" secondAttribute="trailing" constant="55" id="uLd-xN-Cn9"/>
+                        <constraint firstItem="IBC-tV-EiB" firstAttribute="top" secondItem="HZD-Le-bQc" secondAttribute="bottom" constant="9" id="usA-iu-Vol"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="0.35000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aLW-fh-dtW" secondAttribute="trailing" id="GAQ-Y5-Nyp"/>
+                <constraint firstItem="aLW-fh-dtW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O0t-Wg-jVA"/>
+                <constraint firstItem="aLW-fh-dtW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dyn-iZ-pPY"/>
+                <constraint firstAttribute="bottom" secondItem="aLW-fh-dtW" secondAttribute="bottom" id="xm2-Mc-oEf"/>
+            </constraints>
+            <connections>
+                <outlet property="contentView" destination="aLW-fh-dtW" id="tCr-kL-jqM"/>
+            </connections>
+            <point key="canvasLocation" x="251.5" y="241.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_close_gray" width="21" height="21"/>
+    </resources>
+</document>

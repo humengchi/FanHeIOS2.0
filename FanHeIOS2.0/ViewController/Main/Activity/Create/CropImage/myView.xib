@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="myView">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X96-PR-8Xm">
+                    <rect key="frame" x="0.0" y="0.0" width="58" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="XWb-1L-NlD"/>
+                        <constraint firstAttribute="height" constant="40" id="YfQ-yH-Ic4"/>
+                    </constraints>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="nzU-mx-1G8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" alpha="0.69999999999999996" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-Jn-DVc">
+                    <rect key="frame" x="225" y="0.0" width="58" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="58" id="4z0-ip-7fR"/>
+                        <constraint firstAttribute="height" constant="40" id="Taw-Hm-hif"/>
+                    </constraints>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ltC-Cb-NwD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="MLl-Jn-DVc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6qS-lp-ubO"/>
+                <constraint firstAttribute="trailing" secondItem="MLl-Jn-DVc" secondAttribute="trailing" id="Wey-S0-yLc"/>
+                <constraint firstItem="X96-PR-8Xm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xM8-qS-zud"/>
+                <constraint firstItem="X96-PR-8Xm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ySJ-LX-Vab"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="MLl-Jn-DVc" id="CGM-tJ-rkj"/>
+                <outlet property="sureBtn" destination="X96-PR-8Xm" id="rWl-1P-yCx"/>
+            </connections>
+            <point key="canvasLocation" x="412" y="265"/>
+        </view>
+    </objects>
+</document>

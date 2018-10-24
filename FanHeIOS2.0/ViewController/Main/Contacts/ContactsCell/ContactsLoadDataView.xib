@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ContactsLoadDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzn-qC-huH">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_warn_loading" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-oq-jc8">
+                    <rect key="frame" x="150" y="209.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="Lar-kg-62F"/>
+                        <constraint firstAttribute="width" constant="75" id="dxQ-xN-vMV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在为您匹配优质人脉…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8y-gs-oPQ">
+                    <rect key="frame" x="89.5" y="314.5" width="196" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Khe-Fa-xhO"/>
+                        <constraint firstAttribute="width" constant="196" id="cwr-hw-81P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.50588235290000005" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.05000000074505806" translatesAutoresizingMaskIntoConstraints="NO" id="xYn-Hl-nNf">
+                    <rect key="frame" x="77" y="348.5" width="221" height="2"/>
+                    <color key="tintColor" red="0.8862745098" green="0.28627450980000002" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="SHQ-ko-K7N"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.347531588" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bzn-qC-huH" secondAttribute="bottom" id="CON-ew-sxt"/>
+                <constraint firstAttribute="trailing" secondItem="xYn-Hl-nNf" secondAttribute="trailing" constant="77" id="ECN-Jv-bnA"/>
+                <constraint firstItem="bzn-qC-huH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="FUP-BI-RHc"/>
+                <constraint firstItem="xYn-Hl-nNf" firstAttribute="top" secondItem="B8y-gs-oPQ" secondAttribute="bottom" constant="16" id="NgT-wd-OBe"/>
+                <constraint firstItem="xYn-Hl-nNf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="77" id="aTp-AG-Yr1"/>
+                <constraint firstItem="B8y-gs-oPQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bFo-pu-gnh"/>
+                <constraint firstItem="IFd-oq-jc8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="f8e-go-bJp"/>
+                <constraint firstItem="bzn-qC-huH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jfw-Ia-eJR"/>
+                <constraint firstItem="B8y-gs-oPQ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-10" id="pBv-Ky-ZaN"/>
+                <constraint firstAttribute="trailing" secondItem="bzn-qC-huH" secondAttribute="trailing" id="wLW-El-s4z"/>
+                <constraint firstItem="B8y-gs-oPQ" firstAttribute="top" secondItem="IFd-oq-jc8" secondAttribute="bottom" constant="30" id="wQL-TI-gm9"/>
+            </constraints>
+            <connections>
+                <outlet property="progressView" destination="xYn-Hl-nNf" id="o1v-Wl-ISV"/>
+                <outlet property="showLabel" destination="B8y-gs-oPQ" id="IKs-uR-h0T"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_warn_loading" width="75" height="75"/>
+    </resources>
+</document>
