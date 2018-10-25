@@ -421,7 +421,6 @@
 		DB1F06CE1E89F960006BF299 /* ZLPhotoPickerGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F06B21E89F960006BF299 /* ZLPhotoPickerGroupTableViewCell.m */; };
 		DB1F06CF1E89F960006BF299 /* ZLPhotoPickerImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1F06B41E89F960006BF299 /* ZLPhotoPickerImageView.m */; };
 		DB1F06D01E89F960006BF299 /* ZLPhotoLib.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB1F06B61E89F960006BF299 /* ZLPhotoLib.bundle */; };
-		DB2020B82150F14400228BDB /* MainWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2020B72150F14400228BDB /* MainWebVC.m */; };
 		DB2020C02151FA5900228BDB /* jcore-ios-1.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2020BD2151FA5900228BDB /* jcore-ios-1.2.2.a */; };
 		DB2020C12151FA5900228BDB /* jpush-ios-3.1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB2020BE2151FA5900228BDB /* jpush-ios-3.1.0.a */; };
 		DB26E5691DD5604800096DCA /* AdvertisementView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB26E5671DD5604800096DCA /* AdvertisementView.m */; };
@@ -775,6 +774,7 @@
 		DBA739D81E892F3300AEF5F4 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = DBA739C31E892F3300AEF5F4 /* ZSSRichTextEditor.js */; };
 		DBA739D91E892F3300AEF5F4 /* ZSSSelectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA739C51E892F3300AEF5F4 /* ZSSSelectiveViewController.m */; };
 		DBA739DA1E892F3300AEF5F4 /* ZSSTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA739C71E892F3300AEF5F4 /* ZSSTextView.m */; };
+		DBA74FE42181714100122EA3 /* MainWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBA74FE22181714100122EA3 /* MainWebVC.m */; };
 		DBAEF30B1E5FE19B0015833B /* DynamicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAEF30A1E5FE19B0015833B /* DynamicModel.m */; };
 		DBAEF30F1E6003860015833B /* NewRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBAEF30D1E6003860015833B /* NewRecommendController.m */; };
 		DBAEF3101E6003860015833B /* NewRecommendController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBAEF30E1E6003860015833B /* NewRecommendController.xib */; };
@@ -1622,8 +1622,6 @@
 		DB1F06B41E89F960006BF299 /* ZLPhotoPickerImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLPhotoPickerImageView.m; sourceTree = "<group>"; };
 		DB1F06B51E89F960006BF299 /* ZLPhotoPickerCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLPhotoPickerCommon.h; sourceTree = "<group>"; };
 		DB1F06B61E89F960006BF299 /* ZLPhotoLib.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZLPhotoLib.bundle; sourceTree = "<group>"; };
-		DB2020B62150F14300228BDB /* MainWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWebVC.h; path = ../../demo/demo/MainWebVC.h; sourceTree = "<group>"; };
-		DB2020B72150F14400228BDB /* MainWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainWebVC.m; path = ../../demo/demo/MainWebVC.m; sourceTree = "<group>"; };
 		DB2020BC2151FA5900228BDB /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
 		DB2020BD2151FA5900228BDB /* jcore-ios-1.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-ios-1.2.2.a"; sourceTree = "<group>"; };
 		DB2020BE2151FA5900228BDB /* jpush-ios-3.1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.1.0.a"; sourceTree = "<group>"; };
@@ -2194,6 +2192,8 @@
 		DBA739C51E892F3300AEF5F4 /* ZSSSelectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSSelectiveViewController.m; sourceTree = "<group>"; };
 		DBA739C61E892F3300AEF5F4 /* ZSSTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSSTextView.h; sourceTree = "<group>"; };
 		DBA739C71E892F3300AEF5F4 /* ZSSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSSTextView.m; sourceTree = "<group>"; };
+		DBA74FE22181714100122EA3 /* MainWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWebVC.m; sourceTree = "<group>"; };
+		DBA74FE32181714100122EA3 /* MainWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWebVC.h; sourceTree = "<group>"; };
 		DBAAC7911D7980EC00A84FBD /* libPods-FanHeIOS2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-FanHeIOS2.0.a"; path = "Pods/../build/Debug-iphoneos/libPods-FanHeIOS2.0.a"; sourceTree = "<group>"; };
 		DBAEF3091E5FE19B0015833B /* DynamicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicModel.h; sourceTree = "<group>"; };
 		DBAEF30A1E5FE19B0015833B /* DynamicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicModel.m; sourceTree = "<group>"; };
@@ -4505,8 +4505,8 @@
 				DB52EDF61D1278B20031FD9B /* ViewController */,
 				DB52EDD81D12780C0031FD9B /* AppDelegate.h */,
 				DB1BC8C1214427A800D9B99E /* AppDelegate.m */,
-				DB2020B62150F14300228BDB /* MainWebVC.h */,
-				DB2020B72150F14400228BDB /* MainWebVC.m */,
+				DBA74FE32181714100122EA3 /* MainWebVC.h */,
+				DBA74FE22181714100122EA3 /* MainWebVC.m */,
 				DB52EDD51D12780C0031FD9B /* Supporting Files */,
 			);
 			path = FanHeIOS2.0;
@@ -6662,6 +6662,7 @@
 				3AD47E171EC1BD8500988EA0 /* notChoseView.m in Sources */,
 				3ADE26771D5ADA67007DF793 /* EaseUI.m in Sources */,
 				DBF9105C1D49D13C00E02BE1 /* RegisterGuideViewController.m in Sources */,
+				DBA74FE42181714100122EA3 /* MainWebVC.m in Sources */,
 				3AC27CEF1DB077EC009E07A1 /* SCWaveformView.m in Sources */,
 				DBB718D71D7EA6A40014C742 /* AdminGetCoffeeResultViewController.m in Sources */,
 				DB46CBCC1E4AB11B00E25433 /* NotSetController.m in Sources */,
@@ -6762,7 +6763,6 @@
 				DB71B1991DEEA0EA00F2661D /* ShowQRCodeViewController.m in Sources */,
 				DB26E6B01DD5A15A00096DCA /* NONetWorkTableViewCell.m in Sources */,
 				DBC0D3491E1B82C300E1BA06 /* ApplySettingCell.m in Sources */,
-				DB2020B82150F14400228BDB /* MainWebVC.m in Sources */,
 				DBFC186F1F53B65F00F55C1E /* TouTiaoModel.m in Sources */,
 				DB26E72A1DD5A15A00096DCA /* AllFriendsViewController.m in Sources */,
 				3ADE26B01D5ADA67007DF793 /* EaseConversationCell.m in Sources */,
