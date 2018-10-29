@@ -15,7 +15,7 @@ int main(int argc, char * argv[]) {
     }
 }
 
-
+/*
 echo 'start build FanHeIOS2.0'
 
 pwd
@@ -61,3 +61,4 @@ xcodebuild archive -workspace $project_name.xcworkspace -scheme $project_name -c
 echo "第五步，执行编译生成.ipa命令"
 
 xcodebuild -exportArchive -exportOptionsPlist archieveOpt.plist -archivePath archive/$project_name.xcarchive -exportPath ./ -configuration Release
+*/
